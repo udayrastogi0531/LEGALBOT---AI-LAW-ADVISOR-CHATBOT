@@ -1,0 +1,85 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║       🎉 YOUR AI LEGAL ADVISER CHATBOT IS READY! 🎉          ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📋 WHAT YOU NEED TO DO NOW:
+
+┌─────────────────────────────────────────────────────────────┐
+│ STEP 1: Get Your FREE Groq API Key                         │
+└─────────────────────────────────────────────────────────────┘
+
+1. Visit: https://console.groq.com/keys
+2. Sign up (it's free!)
+3. Click "Create API Key"
+4. Copy the key (starts with "gsk_...")
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ STEP 2: Add Your API Key                                   │
+└─────────────────────────────────────────────────────────────┘
+
+Open the file: .env
+
+Replace this line:
+    GROQ_API_KEY=your-groq-api-key-here
+
+With your actual key:
+    GROQ_API_KEY=gsk_1a2b3c4d5e6f7g8h9i0j...
+
+Save the file!
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ STEP 3: Start the App                                      │
+└─────────────────────────────────────────────────────────────┘
+
+OPTION A - Double-click:
+   📄 start.bat
+
+OPTION B - Command line:
+   Open Git Bash and run:
+   
+   source .venv/Scripts/activate
+   python -m streamlit run main.py
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ STEP 4: Use the App!                                       │
+└─────────────────────────────────────────────────────────────┘
+
+1. Browser opens automatically to: http://localhost:8501
+2. Upload a PDF (legal document)
+3. Type your question
+4. Click "Ask AI Lawyer"
+5. Get AI-powered answers!
+
+
+═════════════════════════════════════════════════════════════
+
+⚠️  OPTIONAL: Install Ollama (for document embeddings)
+
+The app uses Ollama locally. If you don't have it:
+
+1. Download: https://ollama.ai
+2. Install it
+3. Open terminal and run:
+   
+   ollama pull deepseek-r1:14b
+
+If you skip this, you'll see an error when uploading PDFs.
+(You can use alternative embedding models too)
+
+═════════════════════════════════════════════════════════════
+
+📁 PROJECT FILES:
+   main.py         - Main Streamlit app
+   .env            - Your API keys (EDIT THIS!)
+   start.bat       - Quick start script
+   SETUP.md        - Detailed setup guide
+   streamlit.log   - Server logs
+
+═════════════════════════════════════════════════════════════
+
+Need help? Check SETUP.md for detailed instructions!
